@@ -3,14 +3,15 @@ import java.util.*;
 public class MazeRunner {
 
     public static Maze myMap = new Maze();
+    public static int moves_taken = 89;
 
     public static void main(String[] args) {
         intro();
-        while (!myMap.didIWin()) {
+        while (!myMap.didIWin() && moves_taken <= 100) {
             String direction = userMove();
             userMover(direction);
+            movesMessage(moves_taken);
         }
-
     }
 
     public static void intro() {
@@ -34,35 +35,49 @@ public class MazeRunner {
     }
 
     public static void userMover(String direction) {
-        // take in desired direction of move, and check if that direction is valid and possible
+        // take in desired direction of move, and check if that direction is possible
 
-            if (myMap.canIMoveRight() && direction.equals("R")) {
-                myMap.moveRight();
-            }
+        moves_taken++;
 
-            else if (myMap.canIMoveLeft() && direction.equals("L")) {
-                myMap.moveLeft();
-            }
-
-            else if (myMap.canIMoveUp() && direction.equals("U")) {
-                myMap.moveUp();
-            }
-
-            else if (myMap.canIMoveDown() && direction.equals("D")) {
-                myMap.moveDown();
-            }
-
-            else {
-                System.out.println("Sorry, you've hit a wall");
+        if (myMap.canIMoveRight() && direction.equals("R")) {
+            myMap.moveRight();
         }
-            myMap.printMap();
-
+        else if (myMap.canIMoveLeft() && direction.equals("L")) {
+            myMap.moveLeft();
+        }
+        else if (myMap.canIMoveUp() && direction.equals("U")) {
+            myMap.moveUp();
+        }
+        else if (myMap.canIMoveDown() && direction.equals("D")) {
+            myMap.moveDown();
+        }
+        else {
+            System.out.println("Sorry, you've hit a wall");
+        }
+        myMap.printMap();
     }
 //
-//    public static void movesMessage(moves) {
-//        // print after number of moves
-//        // count moves
-//    }
+    public static void movesMessage(int moves) {
+        // print after number of moves
+        // count moves
+
+        if (moves == 50) {
+            System.out.println("Warning: You have made 50 moves, you have 50 remaining before the maze exit closes");
+        }
+        else if (moves == 75) {
+            System.out.println("Alert! You have made 75 moves, you only have 25 moves left to escape.");
+        }
+        else if (moves == 90) {
+            System.out.println("DANGER! You have made 90 moves, you only have 10 moves left to escape!!");
+        }
+        else if (moves == 100) {
+            System.out.println("Oh no! You took too long to escape, and now the maze exit is closed FOREVER >:[");
+        }
+        else if (moves > 100) {
+            System.out.println("Sorry, but you didn't escape in time - you lose!");
+            System.exit(0);
+        }
+    }
 //    public static void navigatePit(String direction) {
 //        // pit stuff
 //
