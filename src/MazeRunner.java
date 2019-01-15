@@ -6,7 +6,11 @@ public class MazeRunner {
 
     public static void main(String[] args) {
         intro();
-        userMove();
+        while (!myMap.didIWin()) {
+            String direction = userMove();
+            userMover(direction);
+        }
+
     }
 
     public static void intro() {
@@ -20,47 +24,49 @@ public class MazeRunner {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Where would you like to move? (R, L, U, D): ");
-        String user_choice = input.next();
+        String user_direction = input.next();
 
-        while (!user_choice.matches("r|l|u|d|R|L|U|D")) {
-            System.out.println("Please eneter a valid move: (R, L, U, D)");
-            user_choice = input.next();
+        while (!user_direction.matches("[rludRLUD]")) {
+            System.out.println("Please enter a valid move: (R, L, U, D)");
+            user_direction = input.next();
         }
-
-        return user_choice;
+        return user_direction.toUpperCase();
     }
 
-//    public static String userMover() {
-//        // take in desired direction of move, and check if that direction is valid and possible
-//
-//
-//
-//        if myMap.canIMoveRight("R"); = true {
-//            myMap.MoveRight();
-//        }
-//
-//        if myMap.canIMoveLeft("L"); = true {
-//            myMap.MoveLeft();
-//        }
-//
-//        if myMap.canIMoveUp("U"); = true {
-//            myMap.MoveUp();
-//        }
-//
-//        if myMap.canIMoveDown("D"); = true {
-//            myMap.MovedDown();
-//        }
-//
-//        return direction;
-//
-//    }
+    public static void userMover(String direction) {
+        // take in desired direction of move, and check if that direction is valid and possible
+
+            if (myMap.canIMoveRight() && direction.equals("R")) {
+                myMap.moveRight();
+            }
+
+            else if (myMap.canIMoveLeft() && direction.equals("L")) {
+                myMap.moveLeft();
+            }
+
+            else if (myMap.canIMoveUp() && direction.equals("U")) {
+                myMap.moveUp();
+            }
+
+            else if (myMap.canIMoveDown() && direction.equals("D")) {
+                myMap.moveDown();
+            }
+
+            else {
+                System.out.println("Sorry, you've hit a wall");
+        }
+            myMap.printMap();
+
+    }
 //
 //    public static void movesMessage(moves) {
 //        // print after number of moves
 //        // count moves
 //    }
-//    public static void navigatePit(direction) {
+//    public static void navigatePit(String direction) {
 //        // pit stuff
+//
+//
 //    }
     
 }
