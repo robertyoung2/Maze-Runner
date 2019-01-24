@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98ac2b69-6142-4fd8-925c-c81749f8380a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MazeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeRunner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/MazeRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+              <caret column="102" selection-start-column="102" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -60,8 +61,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,18 +123,19 @@
       <workItem from="1547561567748" duration="9359000" />
       <workItem from="1548079379956" duration="7000" />
       <workItem from="1548263487062" duration="700000" />
-      <workItem from="1548317887324" duration="711000" />
+      <workItem from="1548317887324" duration="816000" />
+      <workItem from="1548324802226" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11035000" />
+    <option name="totallyTimeSpent" value="11179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="806" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11731044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11874106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -171,7 +173,7 @@
     <entry file="file://$PROJECT_DIR$/src/MazeRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
+          <caret column="102" selection-start-column="102" selection-end-column="102" />
         </state>
       </provider>
     </entry>
