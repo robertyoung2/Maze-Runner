@@ -4,7 +4,7 @@ public class MazeRunner {
 
     public static Maze myMap = new Maze();
     public static int moves_taken = 0;
-
+    
     public static void main(String[] args) {
         intro();
         while (!myMap.didIWin() && moves_taken <= 100) {
@@ -18,6 +18,7 @@ public class MazeRunner {
         }
     }
 
+    // method to introduce player to the game and show starting position
     public static void intro() {
         // welcome user and print map
         System.out.println("Welcome to Maze Runner!");
@@ -25,6 +26,7 @@ public class MazeRunner {
         myMap.printMap();
     }
 
+    // method to get user input for move, and to check if move is valid
     public static String userMove() {
         Scanner input = new Scanner(System.in);
 
@@ -56,9 +58,8 @@ public class MazeRunner {
         return direction;
     }
 
+    // method to provide warnings at certain move count remaining
     public static void movesMessage(int moves) {
-        // print after number of moves
-        // count moves
 
         if (moves == 50) {
             System.out.println("Warning: You have made 50 moves, you have 50 remaining before the maze exit closes");
@@ -74,7 +75,7 @@ public class MazeRunner {
         }
     }
 
-
+    // method to navigate pits in maze
     public static void navigatePit(String direction) {
         // pit stuff
 
@@ -90,7 +91,5 @@ public class MazeRunner {
                 System.exit(0);
             }
         }
-
-
     }
 }
