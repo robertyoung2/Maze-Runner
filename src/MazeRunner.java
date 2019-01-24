@@ -1,3 +1,5 @@
+// MazeRunner game designed using the Rubic from the Microsoft course DEV276x, Final Project.
+
 import java.util.*;
 
 public class MazeRunner {

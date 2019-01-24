@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98ac2b69-6142-4fd8-925c-c81749f8380a" name="Default Changelist" comment="" />
+    <list default="true" id="98ac2b69-6142-4fd8-925c-c81749f8380a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/MazeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeRunner.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MazeRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -120,12 +122,12 @@
       <workItem from="1547561567748" duration="9359000" />
       <workItem from="1548079379956" duration="7000" />
       <workItem from="1548263487062" duration="700000" />
-      <workItem from="1548317887324" duration="601000" />
+      <workItem from="1548317887324" duration="711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10925000" />
+    <option name="totallyTimeSpent" value="11035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="806" extended-state="0" />
@@ -168,8 +170,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MazeRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
