@@ -4,7 +4,7 @@ public class MazeRunner {
 
     public static Maze myMap = new Maze();
     public static int moves_taken = 0;
-    
+
     public static void main(String[] args) {
         intro();
         while (!myMap.didIWin() && moves_taken <= 100) {
